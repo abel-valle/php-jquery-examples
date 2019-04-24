@@ -11,7 +11,7 @@ function loadExampleForm() {
 function loadExampleForm2() {
     $.ajax({
         type: 'GET',
-        url: 'form.php',
+        url: 'form2.php',
         success: function (response) {
             $('#id-form-content').html(response);
         }
