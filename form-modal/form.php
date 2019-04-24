@@ -20,7 +20,7 @@ echo "
         </select>
     </div>
     <div class='form-group'>
-        <label for='exampleFormControlSelect2'>Ejemplo de varios select</label>
+        <label for='exampleFormControlSelect2'>Ejemplo de select</label>
         <select multiple class='form-control' id='exampleFormControlSelect2'>
             <option>1</option>
             <option>2</option>
