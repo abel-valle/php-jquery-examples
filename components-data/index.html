@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Tags meta requeridos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS para Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="id-form-input">
+                <!-- Se manda para identificar qué formulario se mandó -->
+                <input type="hidden" name="inputs-time">
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" name="pwd" class="form-control" id="pwd">
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="remember" class="form-check-input"> Recordarme
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <div id="id-content-input"></div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="id-form-textarea">
+                <!-- Se manda para identificar qué formulario se mandó -->
+                <input type="hidden" name="textarea-time">
+
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea name="comment" class="form-control" rows="5" id="comment"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <div id="id-content-textarea"></div>
+        </div>
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="id-form-checkbox">
+                <!-- Se manda para identificar qué formulario se mandó -->
+                <input type="hidden" name="checkbox-time">
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="checks[]" class="form-check-input" value="1">Opción 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="checks[]" class="form-check-input" value="2">Opción 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="checks[]" class="form-check-input" value="3">Opción 3
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <div id="id-content-checkbox"></div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="id-form-option">
+                <!-- Se manda para identificar qué formulario se mandó -->
+                <input type="hidden" name="option-time">
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" name="opts" class="form-check-input" value="1">Opción 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" name="opts" class="form-check-input" value="2">Opción 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" name="opts" class="form-check-input" value="3">Opción 3
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <div id="id-content-option"></div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="id-form-select">
+                <!-- Se manda para identificar qué formulario se mandó -->
+                <input type="hidden" name="select-time">
+
+                <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select name='sel' class="form-control" id="sel1">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                        <option value="4">Opción 4</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+
+            <div id="id-content-select"></div>
+        </div>
+        
+        <!-- -------------------------------------------------------------------------------------- -->
+    </div>
+
+    <!-- JS para Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- JS de la aplicación -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
